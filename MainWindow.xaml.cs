@@ -42,15 +42,38 @@ namespace Original_Sovova
             CalculatorForSovova.Data.k_sa = conv.ConvertStringToDouble(k_sa.Text);
             CalculatorForSovova.Data.X_O = conv.ConvertStringToDouble(X_0.Text);
 
-            SaveFileDialog sfd = new SaveFileDialog();
-            string filename = sfd.FileName;
+            CalculatorForSovova.Data.CountAnotherDatta();
+
+            //Добавить класс Save
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text file (*.txt)|*.txt";
             string text = "";
-            string path = @"C:\Users\MSI\Desktop\test2.txt";
             foreach (var data in CalculatorForSovova.Data.All_Periods)
             {
-                text += ($"{data.Key};{data.Value}\n");
+                text += ($"time:{data.Key}  mass:{data.Value}\n");
             }
-            File.WriteAllText(path, text);
+
+            foreach (var data in CalculatorForSovova.Data.Users_Data)
+            {
+                text += ($"time:{data.Key}  mass(Users):{data.Value}  mass(Count):{CalculatorForSovova.Data.All_Periods[data.Key]}\n");
+            }
+
+            text += ($"Ошибка:{CalculatorForSovova.Data.Fault}\n");
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, text);
+            }
+
+            //SaveFileDialog sfd = new SaveFileDialog();
+            //string filename = sfd.FileName;
+            //string text = "";
+            //string path = @"C:\Users\MSI\Desktop\test2.txt";
+            //foreach (var data in CalculatorForSovova.Data.All_Periods)
+            //{
+            //    text += ($"{data.Key};{data.Value}\n");
+            //}
+            //File.WriteAllText(path, text);
 
             //SaveFileDialog sfd = new SaveFileDialog();
             //sfd.InitialDirectory = @"C:\Users\MSI\Desktop";
@@ -62,6 +85,29 @@ namespace Original_Sovova
             //{
             //    return;
             //}
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var filePath = string.Empty;
+            var fileContent = string.Empty;
+            string[] lines=null;
+            OpenFileDialog open = new OpenFileDialog();
+            if (open.ShowDialog() == true)
+            {
+                filePath = open.FileName;
+
+                var fileStream = open.OpenFile();
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    fileContent = reader.ReadToEnd();
+                    lines = File.ReadAllLines(filePath);
+                    
+                }
+
+            }
+            Distributor.Вata_distribution(lines);
+
         }
     }
 }

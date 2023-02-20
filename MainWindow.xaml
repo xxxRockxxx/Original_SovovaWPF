@@ -23,11 +23,12 @@
         <TextBox x:Name="p_f" HorizontalAlignment="Left" Height="20" Margin="164,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
         <TextBox x:Name="G_f" HorizontalAlignment="Left" Height="20" Margin="134,135,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
         <TextBox x:Name="m_s" HorizontalAlignment="Left" Height="20" Margin="225,170,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <TextBox x:Name="k_fa" HorizontalAlignment="Left" Height="20" Margin="241,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="219"/>
-        <TextBox x:Name="Y_s" HorizontalAlignment="Left" Height="20" Margin="200,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        <TextBox x:Name="k_fa" HorizontalAlignment="Left" Height="20" Margin="204,205,0,195" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="219"/>
+        <TextBox x:Name="Y_s" HorizontalAlignment="Left" Height="20" Margin="225,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
         <TextBox x:Name="x_k" HorizontalAlignment="Left" Height="20" Margin="252,295,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <TextBox x:Name="k_sa" HorizontalAlignment="Left" Height="20" Margin="241,340,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
         <TextBox x:Name="X_0" HorizontalAlignment="Left" Height="20" Margin="225,375,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
         <Button Content="Start" HorizontalAlignment="Left" Height="49" Margin="613,146,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click"/>
+        <Button Content="Open" HorizontalAlignment="Left" Height="30" Margin="613,245,0,0" VerticalAlignment="Top" Width="99" Click="Button_Click_1"/>
     </Grid>
 </Window>
