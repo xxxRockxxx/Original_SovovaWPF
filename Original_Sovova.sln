@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Original_Sovova", "Original_Sovova.csproj", "{40DC84EF-15F7-49E1-9AF0-C043E5AFA10D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForSovova", "..\CalculatorForSovova\CalculatorForSovova.csproj", "{3C2CAA0A-7C6C-4C0A-8086-D173267904D0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aproximation", "..\Aproximation\Aproximation.csproj", "{2D7D21FB-C41B-43AD-B5F1-0F37D6C59ACF}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{40DC84EF-15F7-49E1-9AF0-C043E5AFA10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40DC84EF-15F7-49E1-9AF0-C043E5AFA10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40DC84EF-15F7-49E1-9AF0-C043E5AFA10D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C2CAA0A-7C6C-4C0A-8086-D173267904D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C2CAA0A-7C6C-4C0A-8086-D173267904D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C2CAA0A-7C6C-4C0A-8086-D173267904D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C2CAA0A-7C6C-4C0A-8086-D173267904D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D7D21FB-C41B-43AD-B5F1-0F37D6C59ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D7D21FB-C41B-43AD-B5F1-0F37D6C59ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7D21FB-C41B-43AD-B5F1-0F37D6C59ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
