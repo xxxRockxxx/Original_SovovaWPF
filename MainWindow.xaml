@@ -12,7 +12,7 @@
         <TextBlock x:Name="Плотность_СКФ" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" Text="Плотность СКФ,кг/м3:" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
         <TextBlock x:Name="Расход_СКФ" HorizontalAlignment="Left" Height="23" Margin="10,135,0,0" Text="Расход СКФ, кг/с:" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
         <TextBlock x:Name="Масса_сырья" HorizontalAlignment="Left" Height="25" Margin="10,170,0,0" Text="Масса сырья без экстракта, кг:" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <TextBlock x:Name="Коэффициент_массообмена" HorizontalAlignment="Left" Height="40" Margin="10,205,0,0" Text="Коэффициент массообмена для жидкой фазы, 1/с:" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
+        
         <TextBlock x:Name="Растворимость_экстракта" HorizontalAlignment="Left" Height="40" Margin="10,250,0,0" Text="Растворимость экстракта в СКФ, кг/кг:" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
         <TextBlock x:Name="Выход_растворенного" HorizontalAlignment="Left" Height="30" Margin="10,295,0,0" Text="Выход растворенного вещества.кг:" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <TextBlock x:Name="Коэффициент_твердого" HorizontalAlignment="Left" Height="40" Margin="10,330,0,0" Text="Коэффициент массообмена для твердой фазы, 1/с:" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>
@@ -23,7 +23,7 @@
         <TextBox x:Name="p_f" HorizontalAlignment="Left" Height="20" Margin="164,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
         <TextBox x:Name="G_f" HorizontalAlignment="Left" Height="20" Margin="134,135,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
         <TextBox x:Name="m_s" HorizontalAlignment="Left" Height="20" Margin="225,170,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
-        <TextBox x:Name="k_fa" HorizontalAlignment="Left" Height="20" Margin="204,205,0,195" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="219"/>
+        
         <TextBox x:Name="Y_s" HorizontalAlignment="Left" Height="20" Margin="225,255,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="219"/>
         <TextBox x:Name="x_k" HorizontalAlignment="Left" Height="20" Margin="252,295,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
         <TextBox x:Name="k_sa" HorizontalAlignment="Left" Height="20" Margin="241,340,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="225"/>

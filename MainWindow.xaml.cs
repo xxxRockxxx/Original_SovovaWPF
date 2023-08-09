@@ -36,12 +36,13 @@ namespace Original_Sovova
             CalculatorForSovova.Data.p_F = conv.ConvertStringToDouble(p_f.Text);
             CalculatorForSovova.Data.G_F = conv.ConvertStringToDouble(G_f.Text);
             CalculatorForSovova.Data.m_s = conv.ConvertStringToDouble(m_s.Text);
-            CalculatorForSovova.Data.k_fa = conv.ConvertStringToDouble(k_fa.Text);
+            //CalculatorForSovova.Data.k_fa = conv.ConvertStringToDouble(k_fa.Text);
             CalculatorForSovova.Data.Y_s = conv.ConvertStringToDouble(Y_s.Text);
             CalculatorForSovova.Data.x_k = conv.ConvertStringToDouble(x_k.Text);
             CalculatorForSovova.Data.k_sa = conv.ConvertStringToDouble(k_sa.Text);
             CalculatorForSovova.Data.X_O = conv.ConvertStringToDouble(X_0.Text);
 
+            
             CalculatorForSovova.Data.CountAnotherDatta();
 
             //Добавить класс Save
@@ -59,6 +60,7 @@ namespace Original_Sovova
             }
 
             text += ($"Ошибка:{CalculatorForSovova.Data.Fault}\n");
+            text += ($"Коэффициент массообмена для жидкой фазы:{CalculatorForSovova.Data.k_fa}\n");
 
             if (saveFileDialog.ShowDialog() == true)
             {
